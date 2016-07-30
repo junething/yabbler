@@ -1,0 +1,253 @@
+html {
+  width: 100%;
+  overflow-x: auto;
+}
+body {
+  margin: 0;
+}
+.header {
+  top: 0;
+  background-color: #343117;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1000;
+}
+.headerTitle {
+  font-size: 30px;
+  color: #117000;
+}
+.headerLinks {
+  font-size: 30px;
+  color: #117000 !important;
+  font-size: 20;
+}
+.headerTable {
+  padding-left: 30px;
+  padding-top: 26px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+.bodyDiv {
+  font-family: Helvetica;
+  font-size: 20;
+  color: #525252;
+  text-align: center;
+  width: 100%;
+}
+.table1 {
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 15;
+  color: #525252;
+}
+.leafImage {
+  margin-left: auto;
+  margin-right: auto;
+}
+.image {
+  top: 50;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.image .text {
+  position:absolute;
+  width:100%; /* optional, though better have one */
+  color: #ffffff;
+}
+.text {
+  z-index: 500;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60;
+  font-family: Helvetica;
+  font-size: 20;
+  text-align: center;
+}
+.text2 {
+  font-family: Helvetica;
+  font-size: 20;
+  text-align: center;
+  color: #525252;
+}
+.text3 {
+  font-family: Helvetica;
+  font-size: 30;
+  text-align: center;
+  color: #ffffff;
+}
+div.text4 {
+  font-family: Helvetica;
+  font-size: 16;
+  text-align: left;
+  color: #525252;
+  margin-left: 40px;
+}
+.title {
+  font-family: Helvetica;
+  font-size: 30;
+  text-align: center;
+  color: #525252;
+}
+.learnMoreButton {
+  line-height: 2;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7F462C;
+  border: 0px;
+  -webkit-border-radius:13px;
+  -moz-border-radius:13px;
+  -ms-border-radius:13px;
+  -o-border-radius:13px;
+  border-radius:13px;
+  width:65px;
+  height:25px;
+  padding: 2px;
+}
+.backgroundTable {
+  background-color: #ffffff;
+  padding-left:1%;
+  padding-right:1%;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  color: #333;
+  bottom: 0;
+}
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.footer {
+  background-color: #2A2A2A;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  position: relative;
+}
+.footerText {
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 20;
+  font-family: helvetica;
+  color: #ffffff;
+}
+.footerBottom {
+  background-color: #262626;
+  width: 100%;
+  height: 50px;
+  font-size: 20;
+  font-family: helvetica;
+  color: #ffffff;
+  bottom: 0;
+  position: relative;
+  bottom: 0;
+}
+.footerBottomText {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  background-color: #262626;
+}
+.headerImage {
+  top: 28;
+  left: 200;
+  position: absolute;
+}
+.tabLink, .tabLinkOpen {
+  text-decoration: none;
+  font-family: Helvetica;
+  padding: 7px;
+  border: 1px #525252 solid;
+  color: black;
+}
+.tabLink {
+  width: 150px;
+  font-size: 10;
+  background-color: #cccccc;
+  border-bottom: 0;
+}
+.tabLinkOpen {
+  width: 160px;
+  font-size: 14;
+  background-color: #ffffff;
+  border-bottom-color: #ffffff;
+  margin-bottom: 2px;
+}
+.tab {
+  font-family: Helvetica;
+  font-size: 16;
+  text-align: left;
+  color: #525252;
+  padding-bottom: 6;
+}
+.tabLine {
+  margin-top: 6px;
+  width: 100%;
+  height: 1px;
+  background-color: #525252;
+}
+.blogHolderTable {
+  height: auto;
+}
+.blogHolder {
+  width: 100%;
+  border: 1px solid black;
+  height: auto;
+  overflow-y:hidden;
+  overflow-x: scroll;
+}
+.blogIMG {
+  display : inline-block;
+  white-space : nowrap;
+  margin: 1%;
+  width: 47%;
+  padding: 0;
+}
+.blogIMGtxt {
+  font-family: Helvetica;
+  color: #ffffff;
+  position: absolute;
+  display : inline-block;
+  white-space : nowrap;
+  margin: 1%;
+  width: 46%;
+  padding: 0;
+}
+
+.blogTitle {
+  font-family: Helvetica;
+  font-size: 30;
+  text-align: left;
+  color: #525252;
+}
+.blogBodyTXT {
+  font-family: Helvetica;
+  font-size: 17;
+  text-align: left;
+  color: #000000;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+.likeButton:before {
+  content: "\f087";
+  font-family: FontAwesome;
+}

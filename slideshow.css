@@ -1,0 +1,115 @@
+/* General */
+#css3-slider {
+  margin-top: 100px;
+  top: 0;
+  padding:0px 0px;
+  width:100%;
+  height:286px;
+  position: absolute;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+#css3-slider li {
+  list-style:none;
+  margin:0px 0px;
+  padding:0px 0px;
+}
+
+/* Navigation */
+#css3-slider li input + label {
+  position:absolute;
+  bottom:5px;
+  left:10px;
+  z-index:999;
+  font:bold 11px/16px Arial,Sans-Serif;
+  background-color:black;
+  color:white;
+  padding:0px 0px;
+  width:16px;
+  text-align:center;
+  cursor:pointer;
+}
+
+#css3-slider li:nth-child(2) label {left:28px;}
+#css3-slider li:nth-child(3) label {left:46px;}
+#css3-slider li:nth-child(4) label {left:64px;}
+#css3-slider li:nth-child(5) label {left:82px;}
+
+/* Images */
+#css3-slider li img {
+  min-width: 700px;
+  top:0;
+  border:none;
+  outline:none;
+  position:absolute;
+  left:-100%;
+  width:100%;
+  visibility:hidden;
+  transition-property: all; 
+  -webkit-transition: 3s ease-in-out;
+  -moz-transition: 3s ease-in-out;
+  -o-transition: 3s ease-in-out;
+  -ms-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
+}
+
+/* Captions */
+#css3-slider a {
+  text-decoration:none !important;
+}
+
+#css3-slider li a span {
+  min-width: 700px;
+  cursor:default;
+  display:block;
+  position:absolute;
+  top: 100px;
+  width:100%;
+  font: 26px Helvetica;
+  color: black;
+  text-align: center;
+  opacity:0;
+  viibility:hidden;
+  transition-property: all;
+  -webkit-transition: 3s ease-in-out;
+-moz-transition: 3s ease-in-out;
+-o-transition: 3s ease-in-out;
+-ms-transition: 3s ease-in-out;
+transition: 3s ease-in-out;
+}
+
+/* Active navigation */
+#css3-slider li input:checked + label {
+  background-color:#39f;
+  color:white;
+}
+
+/* Show the image with transition */
+#css3-slider li input:checked ~ img,
+#css3-slider li input:checked ~ a img {
+  top:0;
+  left:0%;
+  width:100%;
+  height: auto;
+  visibility:visible;
+  transition-property: width;
+  -webkit-transition: 3s ease-in-out;
+-moz-transition: 3s ease-in-out;
+-o-transition: 3s ease-in-out;
+-ms-transition: 3s ease-in-out;
+transition: 3s ease-in-out;
+  opacity:1;
+  z-index:99;
+}
+
+/* Show the caption with fade effect */
+#css3-slider li input:checked ~ a span {
+  opacity:1;
+  z-index:100;
+}
+
+/* Hide the radio */
+#css3-slider input {
+  display:none;
+}

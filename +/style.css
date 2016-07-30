@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 94%;
+  max-width: 1100px;
+  font-family: helvetica, sans-serif;
+}
+#header {
+  z-index: 2;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #222;
+  color: white;
+}
+#header h1 {
+	font-weight: bold;
+	top: 0px;
+	margin: 0px;
+	font-size: 1.2em;
+}
+#nav {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  height: 60px;
+}
+#nav ul li {
+  float: left;
+  list-style: none;
+}
+#nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+/*@media (max-width: 599px) {
+  #header .container {
+    width: 100%;
+  }
+  #header h1 {
+    padding-left: 3%;
+  }
+  #nav {
+    width: 100%;
+    top: 60px;
+  }
+  #nav:before {
+    content: '\2630';
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: -50px;
+    line-height: 40px;
+    font-size: 1.4em;
+    cursor: pointer;
+  }
+  #nav ul {
+    background: #222;
+    width: 100%;
+    margin: 0px;
+  }
+  #nav ul li {
+    float: none;
+  }
+  #nav ul li a {
+    padding: 10px 3%;
+    line-height: 20px;
+    border-top: 1px solid #333;
+  }
+}*/
+input[type=text].signup, input[type=text].activate, input[type=text].login,
+input[type=password].signup, input[type=password].activate, input[type=password].login {
+	width: 100%;
+	border: 2px solid #ccc;
+}
+input[type=text].signup:focus, input[type=text].activate:focus, input[type=text].login:focus,
+input[type=password].signup:focus, input[type=password].activate:focus, input[type=password].login:focus{
+	border: 2px solid #55f;
+}
+input[type=text].name {
+	width: 49%	!important;
+}
+div.login {
+	margin: auto;
+	width: 30%
+}
+div.signup {
+	float: right;
+	position: relative;
+	margin-right:20%;
+	width: 25%;
+	padding: 10px;
+	background-color: #ddd;
+	font: 81.25% arial, helvetica, sans-serif;
+}
+#nav ul.sub-nav {
+    display: none;
+}
+
+#nav ul.visible {
+    display: block;
+}
+div.box {
+	width: 100px;
+	height: 100px;
+	border: 1px solid grey;
+	align-content: center;
+	box-sizing: border-box;
+	padding: 5px;
+	display: inline-block;
+	position: relative;
+}
+a.box {
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+/*.icon {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+} */
